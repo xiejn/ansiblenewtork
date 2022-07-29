@@ -41,3 +41,18 @@
    - debug: msg="{{inventory_hostname}}"
    - debug:
        var: ansible_port
+
+
+- name: Display Debug Message
+  - debug:
+      var: ansible_port
+  - module: copy
+      dest: ./hosts-OS-version.txt
+      content: |
+          {% for host in groups['all'] %}
+          {% if hostvars[host]['ansible_facts']['distribution'] is defined %}
+          {{ '%-50s' | format(host) }} {{ hostvars[host]['ansible_facts']['distribution'] }} {{ hostvars[host]['ansible_facts']['distribution_version'] }}
+          {% else %}
+          {{ '%-50s' | format(host) }} undefined
+          {% endif %}
+          {% endfor %}
