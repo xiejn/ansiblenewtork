@@ -1,5 +1,6 @@
+- debug: var=device.value.network_os
 - name: add temp host
   include_tasks: "{{ item }}"
   with_first_found:
-    - "{{ role_path }}/tasks/{{ network_os }}.yml"
+    - "{{ role_path }}/tasks/{{ device.value.network_os }}.yml"
     - "{{ role_path }}/tasks/unsupported_platform.yml"
