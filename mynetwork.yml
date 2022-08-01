@@ -20,8 +20,7 @@
         - '{{ lookup("env", "CISCO_PASSWORD") }}'
         - '{{ lookup("env", "H3C_USERNAME") }}'
         - '{{ lookup("env", "H3C_PASSWORD") }}'
-
-    ansible_password: '{{ lookup("env", "CISCO_PASSWORD") }}'
+        
     - name: Here we are using Ansible add_host module to add a host to in-memory inventory
       include_role:
         name: "roles/add_host"
