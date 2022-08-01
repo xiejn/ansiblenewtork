@@ -8,7 +8,7 @@
         msg: "{{ item.key }}:
               {{ item.value.hostname }},
               {{ item.value.port }},
-              {{ item.value.OS }}"
+              {{ item.value.network_os }}"
       loop: "{{ devices.dict|dict2items }}"
 
     - name: Here we are using Ansible add_host module to add a host to in-memory inventory
