@@ -1,0 +1,5 @@
+- name: add temp host
+  include_tasks: "{{ item }}"
+  with_first_found:
+    - "{{ role_path }}/tasks/{{ network_os }}.yml"
+    - "{{ role_path }}/tasks/unsupported_platform.yml"

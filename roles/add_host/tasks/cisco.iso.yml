@@ -1,0 +1,7 @@
+- name: Here we are using Ansible add_host module to add a host to in-memory inventory
+  add_host:
+    name: "{{ item.value.hostname }}"
+    groups: creatednodes
+    ansible_port: "{{ item.value.port }}"
+    ansible_user: '{{ lookup("env", "CISCO_USERNAME") }}'
+    ansible_password: '{{ lookup("env", "CISCO_PASSWORD") }}'
