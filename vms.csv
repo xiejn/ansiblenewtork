@@ -1,4 +1,4 @@
-hostname,port,network.os
+hostname,port,network_os
 10.10.1.101,22,cisco.ios
 10.10.1.102,22,cisco.ios
 10.10.1.100,22,h3c
