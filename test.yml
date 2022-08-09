@@ -1,0 +1,38 @@
+- hosts: localhost
+  gather_facts: no
+  tasks:
+    - community.general.read_csv:
+        path: device.csv
+        key: hostname
+      register: devices
+    - debug:
+        msg: "{{ item.key }}:
+              {{ item.value.hostname }},
+              {{ item.value.port }},
+              {{ item.value.network_os }}"
+      loop: "{{ devices.dict|dict2items }}"
+
+ #   - debug:
+ #       var: hostvars[inventory_hostname]
+    
+    - debug:
+        msg: 
+        - '{{ lookup("env", "CISCO_USERNAME") }}'
+        - '{{ lookup("env", "CISCO_PASSWORD") }}'
+        - '{{ lookup("env", "H3C_USERNAME") }}'
+        - '{{ lookup("env", "H3C_PASSWORD") }}'
+        
+    - name: Here we are using Ansible add_host module to add a host to in-memory inventory
+      include_role:
+        name: "roles/add_host"
+      loop: "{{ devices.dict|dict2items }}"
+      loop_control:
+        loop_var: device
+
+- name: gather device information
+  hosts: creatednodes
+  gather_facts: no
+#  connection: ansible.netcommon.network_cli
+  tasks:
+   - include_role:
+        name: "roles/gather_device_info"

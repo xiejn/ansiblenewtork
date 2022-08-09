@@ -1,0 +1,11 @@
+- name: "gather device information from H3C"
+  ansible.builtin.raw: display device manuinfo
+  register: result
+- debug:
+    var: result
+- ansible.utils.cli_parse:
+    text: "{{ result.stdout }}"
+    parser:
+      name: ansible.netcommon.native
+      template_path: templates/display_device_manuinfo.yaml
+    set_fact: h3c_facts

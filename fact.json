@@ -1,0 +1,2161 @@
+"fact": {
+        "ansible_facts": {
+            "ansible_net_all_ipv4_addresses": [
+                "192.168.52.253",
+                "172.16.81.116"
+            ],
+            "ansible_net_all_ipv6_addresses": [],
+            "ansible_net_api": "cliconf",
+            "ansible_net_config": "Building configuration...\n\nCurrent configuration : 8340 bytes\n!\n! Last configuration change at 18:37:17 UTC Thu Mar 31 2011 by admin\n! NVRAM config last updated at 18:01:19 UTC Thu Mar 31 2011 by admin\n!\nversion 15.2\nno service pad\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\n!\nhostname Cisco_WS-C3750X-48\n!\nboot-start-marker\nboot-end-marker\n!\n!\nusername admin privilege 15 password 0 P@ssw0rd\naaa new-model\n!\n!\naaa authentication login default local\naaa authorization exec default local \n!\n!\n!\n!\n!\n!\naaa session-id common\nswitch 1 provision ws-c3750x-48\nsystem mtu routing 1500\nip routing\n!\n!\nip domain-name abc.com\nip device tracking\nvtp mode transparent\n!\n!\ncrypto pki trustpoint TP-self-signed-3655443456\n enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-3655443456\n revocation-check none\n rsakeypair TP-self-signed-3655443456\n!\n!\ncrypto pki certificate chain TP-self-signed-3655443456\n certificate self-signed 01\n  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 \n  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 \n  69666963 6174652D 33363535 34343334 3536301E 170D3131 30333330 30313239 \n  33305A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 \n  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 36353534 \n  34333435 3630819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 \n  8100BC6F 17FDFB51 7F7CD4B8 B8442DB6 E52A58AA CF85D5A4 7B7C8E1C A7E960C0 \n  A7D1E935 2D52C963 8E771893 53B7EE60 73584A23 479764E7 B79A797D D5C93683 \n  FCF19AC8 E7968400 B0320AD1 7EF4A184 1B246DD2 E98ADF6F 58833AC5 C1290455 \n  1E26E8B3 F5BECF91 399AFAE8 17BB3AD8 FE66403F 87D92957 C3D17A37 F67B544C \n  C5330203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603 \n  551D2304 18301680 14FD2D03 1BF7CB65 161DD64D 712F2887 92454AF8 EB301D06 \n  03551D0E 04160414 FD2D031B F7CB6516 1DD64D71 2F288792 454AF8EB 300D0609 \n  2A864886 F70D0101 05050003 81810048 032BEB02 0D63ECB6 0A2E6076 16F1C81A \n  8CF956B0 9FE048EC EED95884 5BDF1144 B0E3DF8F 0A863AFD C9F82B5B F2866360 \n  71C1CA4E 6F2B94FA 36D7305E 7C1C314E 036BB43C AC54DA6D E6161108 74B58A32 \n  6897021C FD5C8F61 3A95A4EA 1FEB474B 9E34CC37 DA210E5E 0E98D41F 6E1A2E74 \n  038E687D 5F22837F 533916C9 6448FE\n  \tquit\n!\n!\n!\nspanning-tree mode pvst\nspanning-tree extend system-id\n!\n!\n!\n!\n!\n!\n!\n!\n!\nvlan internal allocation policy ascending\n!\nvlan 52,108,112 \n!\nip ssh version 2\n!\n! \n!\n!\n!\n!\n!\n!\n!\n!\ninterface FastEthernet0\n ip address 172.16.81.116 255.255.255.0\n no ip route-cache\n!\ninterface GigabitEthernet1/0/1\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/2\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/3\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/4\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/5\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/6\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/7\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/8\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/9\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/10\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/11\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/12\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/13\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/14\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/15\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/16\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/17\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/18\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/19\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/20\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/21\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/22\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/23\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/24\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/25\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/26\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/27\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/28\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/29\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/30\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/31\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/32\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/33\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/34\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/35\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/36\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/37\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/38\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/39\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/40\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/41\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/42\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/43\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/44\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/45\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/46\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/47\n switchport access vlan 52\n switchport mode access\n spanning-tree portfast\n!\ninterface GigabitEthernet1/0/48\n switchport trunk encapsulation dot1q\n switchport trunk native vlan 52\n switchport trunk allowed vlan 52\n switchport mode trunk\n!\ninterface GigabitEthernet1/1/1\n!\ninterface GigabitEthernet1/1/2\n!\ninterface GigabitEthernet1/1/3\n!\ninterface GigabitEthernet1/1/4\n!\ninterface TenGigabitEthernet1/1/1\n!\ninterface TenGigabitEthernet1/1/2\n!\ninterface Vlan1\n no ip address\n!\ninterface Vlan52\n ip address 192.168.52.253 255.255.255.0\n!\nip forward-protocol nd\nip http server\nip http secure-server\n!\nip route 0.0.0.0 0.0.0.0 192.168.52.254\nip route 0.0.0.0 0.0.0.0 172.16.81.254\n!\n!\n!\n!\n!\n!\n!\nline con 0\nline vty 0 4\n transport preferred ssh\n transport input ssh\nline vty 5 15\n!\nend",
+            "ansible_net_filesystems": [
+                "flash:"
+            ],
+            "ansible_net_filesystems_info": {
+                "flash:": {
+                    "spacefree_kb": 27994.5,
+                    "spacetotal_kb": 56320.0
+                }
+            },
+            "ansible_net_gather_network_resources": [
+                "ospfv2",
+                "ntp_global",
+                "l3_interfaces",
+                "l2_interfaces",
+                "lacp",
+                "acls",
+                "lacp_interfaces",
+                "static_routes",
+                "ospfv3",
+                "lag_interfaces",
+                "acl_interfaces",
+                "lldp_global",
+                "hostname",
+                "lldp_interfaces",
+                "snmp_server",
+                "bgp_address_family",
+                "prefix_lists",
+                "logging_global",
+                "ospf_interfaces",
+                "interfaces",
+                "bgp_global",
+                "route_maps"
+            ],
+            "ansible_net_gather_subset": [
+                "default",
+                "hardware",
+                "config",
+                "interfaces"
+            ],
+            "ansible_net_hostname": "Cisco_WS-C3750X-48",
+            "ansible_net_image": "flash:/c3750e-universalk9-mz.152-1.E1/c3750e-universalk9-mz.152-1.E1.bin",
+            "ansible_net_interfaces": {
+                "FastEthernet0": {
+                    "bandwidth": 100000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [
+                        {
+                            "address": "172.16.81.116",
+                            "subnet": "24"
+                        }
+                    ],
+                    "lineprotocol": "up",
+                    "macaddress": "d867.d9e1.a439",
+                    "mediatype": null,
+                    "mtu": 1500,
+                    "operstatus": "up",
+                    "type": "PowerPC405 FastEthernet"
+                },
+                "GigabitEthernet1/0/1": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a401",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/10": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a40a",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/11": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a40b",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/12": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a40c",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/13": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a40d",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/14": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a40e",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/15": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a40f",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/16": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a410",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/17": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a411",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/18": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a412",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/19": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a413",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/2": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a402",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/20": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a414",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/21": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a415",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/22": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a416",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/23": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a417",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/24": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a418",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/25": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a419",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/26": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a41a",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/27": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a41b",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/28": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a41c",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/29": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a41d",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/3": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a403",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/30": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a41e",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/31": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a41f",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/32": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a420",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/33": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a421",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/34": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a422",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/35": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a423",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/36": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a424",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/37": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a425",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/38": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a426",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/39": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a427",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/4": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a404",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/40": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a428",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/41": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a429",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/42": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a42a",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/43": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a42b",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/44": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a42c",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/45": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a42d",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/46": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a42e",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/47": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a42f",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/48": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a430",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/5": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a405",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/6": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a406",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/7": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a407",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/8": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a408",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/0/9": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a409",
+                    "mediatype": "10/100/1000BaseTX",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/1/1": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a431",
+                    "mediatype": "Not Present",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/1/2": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a432",
+                    "mediatype": "Not Present",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/1/3": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a433",
+                    "mediatype": "Not Present",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "GigabitEthernet1/1/4": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a434",
+                    "mediatype": "Not Present",
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Gigabit Ethernet"
+                },
+                "TenGigabitEthernet1/1/1": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a435",
+                    "mediatype": null,
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Ten Gigabit Ethernet"
+                },
+                "TenGigabitEthernet1/1/2": {
+                    "bandwidth": 10000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a436",
+                    "mediatype": null,
+                    "mtu": 1500,
+                    "operstatus": "down",
+                    "type": "Ten Gigabit Ethernet"
+                },
+                "Vlan1": {
+                    "bandwidth": 1000000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a440",
+                    "mediatype": null,
+                    "mtu": 1500,
+                    "operstatus": "up",
+                    "type": "EtherSVI"
+                },
+                "Vlan52": {
+                    "bandwidth": 1000000,
+                    "description": null,
+                    "duplex": null,
+                    "ipv4": [
+                        {
+                            "address": "192.168.52.253",
+                            "subnet": "24"
+                        }
+                    ],
+                    "lineprotocol": "down",
+                    "macaddress": "d867.d9e1.a441",
+                    "mediatype": null,
+                    "mtu": 1500,
+                    "operstatus": "up",
+                    "type": "EtherSVI"
+                }
+            },
+            "ansible_net_iostype": "IOS",
+            "ansible_net_memfree_mb": 89218.62890625,
+            "ansible_net_memtotal_mb": 159528.41796875,
+            "ansible_net_model": "WS-C3750X-48",
+            "ansible_net_neighbors": {},
+            "ansible_net_python_version": "3.10.5",
+            "ansible_net_serialnum": "FDO1622V1YE",
+            "ansible_net_stacked_models": [
+                "WS-C3750X-48T-S"
+            ],
+            "ansible_net_stacked_serialnums": [
+                "FDO1622V1YE"
+            ],
+            "ansible_net_system": "ios",
+            "ansible_net_version": "15.2(1)E1",
+            "ansible_net_virtual_switch": "STACK",
+            "ansible_network_resources": {
+                "acl_interfaces": [],
+                "acls": [
+                    {
+                        "acls": [
+                            {
+                                "aces": [
+                                    {
+                                        "destination": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "domain"
+                                            }
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "udp",
+                                        "sequence": 10,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "domain"
+                                            }
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "tcp",
+                                        "sequence": 20,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "udp",
+                                        "sequence": 30,
+                                        "source": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "bootps"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "bootpc"
+                                            }
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "udp",
+                                        "sequence": 40,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "udp",
+                                        "sequence": 50,
+                                        "source": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "bootpc"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true
+                                        },
+                                        "grant": "deny",
+                                        "protocol": "ip",
+                                        "sequence": 60,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    }
+                                ],
+                                "acl_type": "extended",
+                                "name": "preauth_ipv4_acl (per-user)"
+                            }
+                        ],
+                        "afi": "ipv4"
+                    },
+                    {
+                        "acls": [
+                            {
+                                "aces": [
+                                    {
+                                        "destination": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "domain"
+                                            }
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "udp",
+                                        "sequence": 10,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "domain"
+                                            }
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "tcp",
+                                        "sequence": 20,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "icmp",
+                                        "source": {
+                                            "any": true
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "icmp",
+                                        "protocol_options": {
+                                            "icmp": {
+                                                "router_solicitation": true
+                                            }
+                                        },
+                                        "sequence": 50,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "icmp",
+                                        "protocol_options": {
+                                            "icmp": {
+                                                "router_advertisement": true
+                                            }
+                                        },
+                                        "sequence": 60,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "icmp",
+                                        "protocol_options": {
+                                            "icmp": {
+                                                "redirect": true
+                                            }
+                                        },
+                                        "sequence": 70,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "546"
+                                            }
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "udp",
+                                        "sequence": 80,
+                                        "source": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "547"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "547"
+                                            }
+                                        },
+                                        "grant": "permit",
+                                        "protocol": "udp",
+                                        "sequence": 90,
+                                        "source": {
+                                            "any": true,
+                                            "port_protocol": {
+                                                "eq": "546"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "destination": {
+                                            "any": true
+                                        },
+                                        "grant": "deny",
+                                        "protocol": "ipv6",
+                                        "sequence": 100,
+                                        "source": {
+                                            "any": true
+                                        }
+                                    }
+                                ],
+                                "name": "preauth_ipv6_acl (per-user)"
+                            }
+                        ],
+                        "afi": "ipv6"
+                    }
+                ],
+                "bgp_global": {},
+                "hostname": {
+                    "hostname": "Cisco_WS-C3750X-48"
+                },
+                "interfaces": [
+                    {
+                        "enabled": true,
+                        "name": "FastEthernet0"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/1"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/10"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/11"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/12"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/13"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/14"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/15"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/16"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/17"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/18"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/19"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/2"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/20"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/21"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/22"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/23"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/24"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/25"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/26"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/27"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/28"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/29"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/3"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/30"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/31"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/32"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/33"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/34"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/35"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/36"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/37"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/38"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/39"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/4"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/40"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/41"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/42"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/43"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/44"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/45"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/46"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/47"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/48"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/5"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/6"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/7"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/8"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/0/9"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/1/1"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/1/2"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/1/3"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "GigabitEthernet1/1/4"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "TenGigabitEthernet1/1/1"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "TenGigabitEthernet1/1/2"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "Vlan1"
+                    },
+                    {
+                        "enabled": true,
+                        "name": "Vlan52"
+                    }
+                ],
+                "l2_interfaces": [
+                    {
+                        "name": "FastEthernet0"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/1"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/2"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/3"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/4"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/5"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/6"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/7"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/8"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/9"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/10"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/11"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/12"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/13"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/14"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/15"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/16"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/17"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/18"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/19"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/20"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/21"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/22"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/23"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/24"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/25"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/26"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/27"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/28"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/29"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/30"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/31"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/32"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/33"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/34"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/35"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/36"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/37"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/38"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/39"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/40"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/41"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/42"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/43"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/44"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/45"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/46"
+                    },
+                    {
+                        "access": {
+                            "vlan": 52
+                        },
+                        "mode": "access",
+                        "name": "GigabitEthernet1/0/47"
+                    },
+                    {
+                        "mode": "trunk",
+                        "name": "GigabitEthernet1/0/48",
+                        "trunk": {
+                            "allowed_vlans": [
+                                "52"
+                            ],
+                            "encapsulation": "dot1q",
+                            "native_vlan": 52
+                        }
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/1"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/2"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/3"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/4"
+                    },
+                    {
+                        "name": "TenGigabitEthernet1/1/1"
+                    },
+                    {
+                        "name": "TenGigabitEthernet1/1/2"
+                    }
+                ],
+                "l3_interfaces": [
+                    {
+                        "ipv4": [
+                            {
+                                "address": "172.16.81.116/24"
+                            }
+                        ],
+                        "name": "FastEthernet0"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/1"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/10"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/11"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/12"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/13"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/14"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/15"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/16"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/17"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/18"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/19"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/2"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/20"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/21"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/22"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/23"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/24"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/25"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/26"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/27"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/28"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/29"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/3"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/30"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/31"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/32"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/33"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/34"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/35"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/36"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/37"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/38"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/39"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/4"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/40"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/41"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/42"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/43"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/44"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/45"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/46"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/47"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/48"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/5"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/6"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/7"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/8"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/9"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/1"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/2"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/3"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/4"
+                    },
+                    {
+                        "name": "TenGigabitEthernet1/1/1"
+                    },
+                    {
+                        "name": "TenGigabitEthernet1/1/2"
+                    },
+                    {
+                        "name": "Vlan1"
+                    },
+                    {
+                        "ipv4": [
+                            {
+                                "address": "192.168.52.253/24"
+                            }
+                        ],
+                        "name": "Vlan52"
+                    }
+                ],
+                "lacp": {
+                    "system": {
+                        "priority": 32768
+                    }
+                },
+                "lacp_interfaces": [
+                    {
+                        "name": "FastEthernet0"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/1"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/2"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/3"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/4"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/5"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/6"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/7"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/8"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/9"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/10"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/11"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/12"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/13"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/14"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/15"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/16"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/17"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/18"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/19"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/20"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/21"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/22"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/23"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/24"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/25"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/26"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/27"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/28"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/29"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/30"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/31"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/32"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/33"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/34"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/35"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/36"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/37"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/38"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/39"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/40"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/41"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/42"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/43"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/44"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/45"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/46"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/47"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/48"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/1"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/2"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/3"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/4"
+                    },
+                    {
+                        "name": "TenGigabitEthernet1/1/1"
+                    },
+                    {
+                        "name": "TenGigabitEthernet1/1/2"
+                    },
+                    {
+                        "name": "Vlan1"
+                    },
+                    {
+                        "name": "Vlan52"
+                    }
+                ],
+                "lag_interfaces": {},
+                "logging_global": {},
+                "ntp_global": {},
+                "ospf_interfaces": [
+                    {
+                        "name": "FastEthernet0"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/1"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/2"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/3"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/4"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/5"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/6"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/7"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/8"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/9"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/10"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/11"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/12"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/13"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/14"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/15"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/16"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/17"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/18"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/19"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/20"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/21"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/22"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/23"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/24"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/25"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/26"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/27"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/28"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/29"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/30"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/31"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/32"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/33"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/34"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/35"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/36"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/37"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/38"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/39"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/40"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/41"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/42"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/43"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/44"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/45"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/46"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/47"
+                    },
+                    {
+                        "name": "GigabitEthernet1/0/48"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/1"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/2"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/3"
+                    },
+                    {
+                        "name": "GigabitEthernet1/1/4"
+                    },
+                    {
+                        "name": "TenGigabitEthernet1/1/1"
+                    },
+                    {
+                        "name": "TenGigabitEthernet1/1/2"
+                    },
+                    {
+                        "name": "Vlan1"
+                    },
+                    {
+                        "name": "Vlan52"
+                    }
+                ],
+                "snmp_server": {},
+                "static_routes": [
+                    {
+                        "address_families": [
+                            {
+                                "afi": "ipv4",
+                                "routes": [
+                                    {
+                                        "dest": "0.0.0.0/0",
+                                        "next_hops": [
+                                            {
+                                                "forward_router_address": "172.16.81.254"
+                                            },
+                                            {
+                                                "forward_router_address": "192.168.52.254"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "changed": false,
+        "failed": false
+    }

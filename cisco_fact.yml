@@ -1,0 +1,13 @@
+- hosts: cisco
+  connection: ansible.netcommon.network_cli
+  gather_facts: false
+  tasks:
+  - name: gather cisco ios facts
+    cisco.ios.facts:
+      available_network_resources: false
+      gather_subset: min
+      gather_network_resources: "{{ network_resource | default('!vlans') }}"
+    register: fact
+  - name: Show Fact Information
+    debug:
+      var: fact

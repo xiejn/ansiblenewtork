@@ -1,0 +1,6 @@
+- name: "Gather device information from cisco ios"
+  cisco.ios.facts:
+    available_network_resources: false
+    gather_subset: min
+    gather_network_resources: "{{ network_resource | default('!vlans') }}"
+  register: fact

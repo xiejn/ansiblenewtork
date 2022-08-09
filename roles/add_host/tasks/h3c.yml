@@ -1,7 +1,7 @@
 - name: Here we are using Ansible add_host module to add a host to in-memory inventory
   add_host:
     name: "{{ device.value.hostname }}"
-    groups: creatednodes
+    groups: h3cgroup
     ansible_port: "{{ device.value.port }}"
     ansible_user: '{{ lookup("env", "H3C_USERNAME") }}'
     ansible_password: '{{ lookup("env", "H3C_PASSWORD") }}'

@@ -1,0 +1,4 @@
+---
+- name: unsupported network platform for add_host role
+  debug:
+    msg: "this is not supported for add_host role; the {{ item.network_os }} does not have any specific information specified"

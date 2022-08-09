@@ -1,0 +1,64 @@
+- hosts: localhost
+  gather_facts: no
+  tasks:
+    - community.general.read_csv:
+        path: device.csv
+        key: hostname
+      register: devices
+    - debug:
+        msg: "{{ item.key }}:
+              {{ item.value.hostname }},
+              {{ item.value.port }},
+              {{ item.value.network_os }}"
+      loop: "{{ devices.dict|dict2items }}"
+
+ #   - debug:
+ #       var: hostvars[inventory_hostname]
+    
+    - debug:
+        msg: 
+        - '{{ lookup("env", "CISCO_USERNAME") }}'
+        - '{{ lookup("env", "CISCO_PASSWORD") }}'
+        - '{{ lookup("env", "H3C_USERNAME") }}'
+        - '{{ lookup("env", "H3C_PASSWORD") }}'
+        
+    - name: Here we are using Ansible add_host module to add a host to in-memory inventory
+      include_role:
+        name: "roles/add_host"
+      loop: "{{ devices.dict|dict2items }}"
+      loop_control:
+        loop_var: device
+
+- name: gather device information for cisco
+  hosts: ciscogroup
+  gather_facts: no
+  connection: ansible.netcommon.network_cli
+  tasks:
+   - include_role:
+        name: "roles/gather_device_info"
+   - debug:
+       var: ansible_facts
+
+- name: gather device information for H3C
+  hosts: h3cgroup
+  gather_facts: no
+  tasks:
+   - include_role:
+        name: "roles/gather_device_info"
+   - debug:
+       var: ansible_facts
+
+- name: Show all Facts inforamtion         
+  hosts: localhost
+  tasks:  
+   - debug:
+       msg: "hostname: {{ myhost}} , ansible_net_model: {{ hostvars[myhost]['ansible_facts']['h3c_facts'].ansible_net_model }}, ansible_net_serialnum: {{ hostvars[myhost]['ansible_facts']['h3c_facts'].ansible_net_serialnum }} "
+     loop: "{{ groups['h3cgroup'] }}"
+     loop_control:
+       loop_var: myhost
+
+   - debug:
+       msg: "hostname: {{ myhost}} , ansible_net_model: {{ hostvars[myhost]['ansible_facts'].net_model }}, ansible_net_serialnum: {{ hostvars[myhost]['ansible_facts'].net_serialnum }} "
+     loop: "{{ groups['ciscogroup'] }}"
+     loop_control:
+       loop_var: myhost
